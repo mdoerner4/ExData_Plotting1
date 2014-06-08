@@ -1,3 +1,6 @@
+## script creates plot1
+# historgram of Global active power data
+
 ## read data
 datao <- read.table("household_power_consumption.txt", sep= ";", as.is = "Date", header=TRUE)
 datao$Date <- as.Date(datao$Date, format = "%d/%m/%Y")

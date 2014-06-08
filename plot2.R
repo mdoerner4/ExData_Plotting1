@@ -18,7 +18,7 @@ datac <- rbind(feb1, feb2)
 datac$dt <- paste(as.character(datac$Date), as.character(datac$Time))
 datac$dt <- strptime(datac$dt, format = "%Y-%m-%d %H:%M:%S")
 
-## create histogram to png file
+## create plot to png file
 png(file = "plot2.png")
 with(datac, plot(dt, Global_active_power, type="l",
                  xlab = "", 

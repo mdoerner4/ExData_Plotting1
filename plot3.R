@@ -1,10 +1,9 @@
 ## script creates plot3
-# line graph of Global Active Power data
+# line graph of Sub_metering data
 
 ## read data
 datao <- read.table("household_power_consumption.txt", sep= ";", as.is = "Date", header=TRUE)
 datao$Date <- as.Date(datao$Date, format = "%d/%m/%Y")
-#datao$Time <- strptime(datao$Time, format = "%H:%M:%S")
 datao$Global_active_power <- as.numeric(as.character(datao$Global_active_power))
 
 ## new data with just 2007-02-01 and 2007-02-02
